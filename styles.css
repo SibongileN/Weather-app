@@ -6,8 +6,19 @@ body{background-color:  white;}
      padding: 40px;
 border-radius: 15px;
 font-weight: 200;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 margin: 40px auto;
+
+
+
+ font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+
+  font-optical-sizing: auto;
+  
+
 
 box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
