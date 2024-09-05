@@ -1,0 +1,11 @@
+body{background-color:  white;}
+.container{
+    background-color:  #f5eef8; ;
+    width:800px ;
+    height:600px;
+     padding: 40px;
+border-radius: 15px;
+font-weight: 200;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 25px auto;
+}
