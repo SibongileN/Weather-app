@@ -69,4 +69,10 @@ ul{
 footer{
     text-align: center;
     font-size: 20px;
+    color: black;
+    margin: 0 auto;
+}
+a{
+    color: blueviolet;
+    font-style: bold;
 }
