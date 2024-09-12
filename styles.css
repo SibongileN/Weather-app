@@ -8,18 +8,10 @@ border-radius: 15px;
 font-weight: 200;
 
 margin: 40px auto;
-
-
-
  font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  
   font-style: normal;
-
   font-optical-sizing: auto;
-  
-
-
 box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 .search-column{
@@ -51,4 +43,10 @@ box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     justify-content: center;
     align-items: center;
 
+}
+ul{
+    list-style-type: none;
+}
+footer{
+text-align: center;
 }
