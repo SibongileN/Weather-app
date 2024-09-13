@@ -9,3 +9,5 @@ function searchCity(event){
 
 let searchBar = document.querySelector("form");
 searchBar.addEventListener("submit",searchCity);
+
+
