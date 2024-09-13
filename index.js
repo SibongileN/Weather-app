@@ -14,12 +14,12 @@ searchBar.addEventListener("submit",searchSubmit);
 function displayWeather(response){
     let currentTemperature = document.querySelector("#current-temperature");
     let temperature = Math.round(response.data.temperature.current);
-    console.log("temperature");
+    let currentTemperature = document.querySelector("#current-temperature");
 
     let city = document.querySelector("#city");
 city.innerHTML= response.data.city;    
 
-    currentTemperature.innerHTML= `${temperature}`
+    currentTemperature.innerHTML= `${temperature}°`
 }
 function searchCity(city){
 let apiKey= "93704d2fc3113d491t780f96oa1cbb5b";
