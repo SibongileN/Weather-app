@@ -2,24 +2,13 @@ body{background-color:  white;}
 .container{
     background-color:  #e0dcf1 ;
     width:1000px ;
-    height:400px;
+    height:410px;
      padding: 40px;
 border-radius: 15px;
 font-weight: 200;
 
 margin: 80px auto;
- 
- 
-  
-  
-  
- 
 
-  
-  
-  
-
-  
 
 box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
@@ -35,7 +24,7 @@ box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     justify-items: center;
     align-items: center;
     width: 900px;
-margin: 20px auto;
+margin: 30px 100px 20px 100px;
 }
 
  
@@ -72,7 +61,8 @@ margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-padding: 40px;
+padding: 50px;
+margin: 8px 80px;
 }
 
 .city-temperature{
@@ -80,23 +70,25 @@ font-size: 25px;
 
 }
 .temperature-today{
-font-size: 60px;
-font-style: bold;
 text-align: center;
 
 }
-#emoji{
+#current-temperature{
     font-size: 100px;
-    color: orange;
+    font-style: bold;
+    margin-left: 10px;
+}
+#emoji{
+    font-size: 70px;
+    margin-top: 30px;
+    color: #2e4053;
 }
 
 #wind, #humidity{
     color: #496684;
 font-style: bold;
 }
-h1{
-    text-align: center;
-}
+
 
 footer{
     text-align: center;

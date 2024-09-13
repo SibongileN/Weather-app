@@ -45,10 +45,12 @@ icon.innerHTML= `<img src="${response.data.condition.icon_url}"/> `
     let day= days[now.getDay()];
     let hours= now.getHours();
     let minutes= now.getMinutes();
+
+    if (minutes < 10){
+        minutes= `0${minutes}`;
+    }
   
-if (minutes < 0){
-    return `0${minutes}`;
-}
+
     
     
 
