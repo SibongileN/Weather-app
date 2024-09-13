@@ -1,14 +1,14 @@
-
+function searchCity(city){
+    let apiKey= "93704d2fc3113d491t780f96oa1cbb5b";
+    let apiUrl= `https://api.shecodes.io/weather/v1/current?query=${city}=&key=${apiKey}`;
+    axios.get(apiUrl).then(displayWeather)
+    }
+    
 
 function searchSubmit(event){
     event.preventDefault();
     let searchInput= document.querySelector("#search-input");
-   
-
     searchCity(searchInput.value);
-
-    
-    
 }
 
 let searchBar = document.querySelector("form");
@@ -25,13 +25,8 @@ function displayWeather(response){
     let currentHumidity= response.data.temperature.humidity;
     let currentWind= response.data.wind.speed;
 let today = document.querySelector("#today");
-let now = new Date();
-    let days = ["Sunday","Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday"]
-
-    let day= days[now.getDay()];
-    let hours= now.getHours();
-    let minutes= now.getMinutes();
-
+let icon= document.querySelector("#emoji");
+icon.innerHTML= `<img src="${response.data.condition.icon_url}"/> `
 
 
     city.innerHTML= response.data.city;  
@@ -42,14 +37,18 @@ let now = new Date();
     today.innerHTML= `${day}, ${hours}:${minutes}`;
 
 }
-function searchCity(city){
-let apiKey= "93704d2fc3113d491t780f96oa1cbb5b";
-let apiUrl= `https://api.shecodes.io/weather/v1/current?query=${city}=&key=${apiKey}`;
-axios.get(apiUrl).then(displayWeather)
+
+
+    let now = new Date();
+    let days = ["Sunday","Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+    let day= days[now.getDay()];
+    let hours= now.getHours();
+    let minutes= now.getMinutes();
+  
+if (minutes < 0){
+    return `0${minutes}`;
 }
-
-
-
     
     
 

@@ -1,6 +1,6 @@
 body{background-color:  white;}
 .container{
-    background-color:  #f5eef8; ;
+    background-color:  #e0dcf1 ;
     width:1000px ;
     height:400px;
      padding: 40px;
@@ -40,7 +40,7 @@ margin: 20px auto;
 
  
 #search-input{
-    background-color: white;
+    background-color: #f0eef8;
     border: none;
     padding: 15px;
     width:600px;
@@ -65,7 +65,7 @@ margin: 20px auto;
 #search-submit:hover{
     border: 2px solid #2e4053;
     color: #2e4053;
-    background-color: white;
+    background-color: #f0eef8;
 }
 
 .today-weather{
@@ -85,7 +85,7 @@ font-style: bold;
 text-align: center;
 
 }
-.emoji{
+#emoji{
     font-size: 100px;
     color: orange;
 }
