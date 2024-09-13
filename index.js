@@ -14,12 +14,21 @@ searchBar.addEventListener("submit",searchSubmit);
 function displayWeather(response){
     let currentTemperature = document.querySelector("#current-temperature");
     let temperature = Math.round(response.data.temperature.current);
-    let currentTemperature = document.querySelector("#current-temperature");
-
+    let description = document.querySelector("#description");
+    let humidity = document.querySelector("#humidity");
+    let wind = document.querySelector("#wind");
     let city = document.querySelector("#city");
-city.innerHTML= response.data.city;    
+    let currentHumidity= response.data.temperature.humidity;
+    let currentWind= response.data.wind.speed;
+    let days = ["Sunday","Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    let day = document.querySelector("#day")
+    city.innerHTML= response.data.city;  
+    description.innerHTML= response.data.condition.description;  
+    humidity.innerHTML=`${currentHumidity}%`;
+    wind.innerHTML=`${currentWind}km/h`;
+    currentTemperature.innerHTML= `${temperature}°`;
+    day.innerHTML= 
 
-    currentTemperature.innerHTML= `${temperature}°`
 }
 function searchCity(city){
 let apiKey= "93704d2fc3113d491t780f96oa1cbb5b";

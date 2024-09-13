@@ -90,7 +90,7 @@ text-align: center;
     color: orange;
 }
 
-.wind, .humidity{
+#wind, #humidity{
     color: #496684;
 font-style: bold;
 }
