@@ -46,7 +46,7 @@ margin: 20px auto;
     width:600px;
     font-size: 20px;
     border-radius: 6px;
-    transition: all 200ms smooth;
+    transition: all 200ms ease-in-ease-out;
 }
 
 #search-input:hover{
@@ -60,6 +60,7 @@ margin: 20px auto;
     font-size: 20px;
     color: white;
     border-radius: 6px;
+    transition: all 200ms ease-in-ease-out;
 }
 #search-submit:hover{
     border: 2px solid #2e4053;
@@ -76,18 +77,25 @@ padding: 40px;
 
 .city-temperature{
 font-size: 25px;
-text-align: center;
-;
+
 }
 .temperature-today{
 font-size: 60px;
 font-style: bold;
 text-align: center;
+
+}
+.emoji{
+    font-size: 100px;
+    color: orange;
 }
 
 .wind, .humidity{
     color: #496684;
 font-style: bold;
+}
+h1{
+    text-align: center;
 }
 
 footer{
