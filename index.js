@@ -35,7 +35,7 @@ icon.innerHTML= `<img src="${response.data.condition.icon_url}"/> `
     wind.innerHTML=`${currentWind}km/h`;
     currentTemperature.innerHTML= `${temperature}°`;
     today.innerHTML= `${day}, ${hours}:${minutes}`;
-
+    getForecast(response.data) 
 }
 
 
@@ -50,9 +50,37 @@ icon.innerHTML= `<img src="${response.data.condition.icon_url}"/> `
         minutes= `0${minutes}`;
     }
   
+function getForecast(city){
+    apiKey ="93704d2fc3113d491t780f96oa1cbb5b";
+    apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+    axios(apiUrl).then(displayForecast);
+   
+}
 
+function displayForecast(response){
     
-    
+    let days = ["Sun","Mon", "Tue","Wed","Thu","Fri","Sat"];
+
+    let forecastHtml= "";
+
+days.forEach(function (day){
+    forecastHtml = forecastHtml +
+
+    `<div class="daily-forecast">
+      <div class="day" id="day">${day}</div>
+      <div class="icon" id="forecast-icon">☁</div>
+      <div class="forecast-temperature">
+        <div class="forecast-temp"><strong>16°</strong></div>
+        <div class="forecast-temp">16°</div>
+      </div>
+    </div>`;
+
+});
+let forecast = document.querySelector("#forecast");
+forecast.innerHTML= forecastHtml;
+}
+displayForecast();
+  
 
 
     
