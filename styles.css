@@ -2,8 +2,8 @@ body{background-color:  white;}
 .container{
     background-color:  #e0dcf1 ;
     width:1000px ;
-    height:700px;
-     padding: 40px;
+    height:600px;
+     padding: 20px;
 border-radius: 15px;
 font-weight: 200;
 color: #697565;
@@ -24,7 +24,7 @@ box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     justify-items: center;
     align-items: center;
     width: 900px;
-margin: 30px 100px 20px 100px;
+margin: 30px 100px 30px 100px;
 }
 
  
@@ -39,7 +39,7 @@ margin: 30px 100px 20px 100px;
 }
 
 #search-input:hover{
-    border: 5px solid #2e4053;
+    border: 3px solid #2e4053;
 }
 #search-submit{
     background-color: #2e4053;
@@ -52,22 +52,24 @@ margin: 30px 100px 20px 100px;
     transition: all 200ms ease-in-ease-out;
 }
 #search-submit:hover{
-    border: 5px solid #2e4053;
-    color: #2e4053;
-    background-color: #f0eef8;
+    border: 3px solid #2e4053;
+    color: #f0eef8;
+    background-color: #8581a1;
 }
 
 .today-weather{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-padding: 50px;
-margin: 8px 80px;
+padding: 10px 30px;
+margin: 5px 40px;
 }
+
+
+
 .city{color: black;}
 .city-temperature{
 font-size: 25px;
-
+width: 70%;
 }
 .temperature-today{
 text-align: center;
@@ -100,29 +102,38 @@ padding: 25px;
 }
 .daily-forecast{
     justify-content: center;
-    font-size: 25px;
-    padding:20px;
+   transition: all 300ms ease-in-out;
+    padding: 10px;
 }
-.day-forecast{
+.day{
     font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+   
     
 }
 .forecast-temperature{
     color: #2e4053;
     display: flex;
+    justify-content: space-between;
+    font-size: 20px;
 }
 .icon{
-    color: white;
-    font-size: 40px;
-    padding: 20px;
+   text-align: center;
+    max-width: 88px;
+    height: 88px;
+   
+    margin: 0 auto;
+    display: block;
+    
 }
 
 footer{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     margin: 0 auto;
-    padding: 30px;
+    padding: 10px;
 }
 a{
     color: #496684;
